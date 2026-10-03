@@ -53,7 +53,7 @@ These should find nothing: `Haha that movie was so good`, `I won't be able to ma
 
 ## Features
 
-- **Paste a message → promises.** English, Hindi and Hinglish ("kal subah", "aaj raat", "5 baje").
+- **Paste a message → promises.** English and Hinglish ("kal subah", "aaj raat", "5 baje").
 - **Import a WhatsApp chat export.** Only *your* lines are scanned, and "tomorrow" is resolved
   relative to when you *said* it, so old promises correctly show up as overdue.
 - **You confirm everything.** Date/time pickers, edit any promise later, undo "done".
