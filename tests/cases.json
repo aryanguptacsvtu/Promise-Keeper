@@ -1,0 +1,22 @@
+[
+ {"message": "Sure, I'll send you the project report tonight.", "partner": "Rahul", "count": 1, "has_deadline": true, "category": "core"},
+ {"message": "I will call you after dinner", "partner": "Priya", "count": 1, "has_deadline": true, "category": "core"},
+ {"message": "Let me check with the landlord and get back to you tomorrow", "partner": "Amit", "count": 1, "has_deadline": true, "category": "core"},
+ {"message": "I'll bring the books to class on Monday", "partner": "Neha", "count": 1, "has_deadline": true, "category": "core"},
+ {"message": "I promise I'll fix your laptop this weekend", "partner": "Dad", "count": 1, "has_deadline": true, "category": "core"},
+ {"message": "I'll think about it", "partner": "Sam", "count": 0, "has_deadline": false, "category": "core"},
+ {"message": "Haha that movie was so good", "partner": "Sam", "count": 0, "has_deadline": false, "category": "core"},
+ {"message": "Can you send me the notes by tonight?", "partner": "Rahul", "count": 0, "has_deadline": false, "category": "core"},
+ {"message": "Rahul will send the files tomorrow", "partner": "Rahul", "count": 0, "has_deadline": false, "category": "core"},
+ {"message": "I'll pay you back, don't worry", "partner": "Karan", "count": 1, "has_deadline": false, "category": "core"},
+ {"message": "I'll call mom tomorrow morning and pay the electricity bill by Friday", "partner": null, "count": 2, "has_deadline": true, "category": "core"},
+ {"message": "Yes I'll be there at 6pm, and I'll bring the cake", "partner": "Anita", "count": 1, "has_deadline": true, "category": "core"},
+ {"message": "Kal subah main tumhe call karunga", "partner": "Rohit", "count": 1, "has_deadline": true, "category": "core"},
+ {"message": "Aaj raat main tumhe paise bhej dunga", "partner": "Karan", "count": 1, "has_deadline": true, "category": "hinglish"},
+ {"message": "Parso shaam 6 baje milte hain, main slides le aunga", "partner": "Neha", "count": 1, "has_deadline": true, "category": "hinglish"},
+ {"message": "Main dekhta hoon, pata nahi", "partner": "Amit", "count": 0, "has_deadline": false, "category": "hinglish"},
+ {"message": "I won't be able to make it tomorrow, sorry", "partner": "Anita", "count": 0, "has_deadline": false, "category": "edge"},
+ {"message": "If I get time I'll try to look at it", "partner": "Sam", "count": 0, "has_deadline": false, "category": "edge"},
+ {"message": "I sent you the report yesterday", "partner": "Rahul", "count": 0, "has_deadline": false, "category": "edge"},
+ {"message": "Remind me to call the bank on Friday", "partner": null, "count": 1, "has_deadline": true, "category": "edge"}
+]
