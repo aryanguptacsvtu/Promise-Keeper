@@ -63,12 +63,26 @@ These should find nothing: `Haha that movie was so good`, `I won't be able to ma
 
 ## How it works
 
-```
-message --> local LLM (JSON-schema output) --> commitment, person, deadline *phrase*
-                                                        │
-                       dates.py resolves "tonight" / "by Monday" deterministically
-                                                        │ 
-                       you confirm / edit  -->  SQLite  -->  "What am I forgetting?"
+```mermaid
+flowchart LR
+    message[Message] --> llm[Local LLM<br/>JSON-schema output]
+    llm --> extracted[Commitment, person,<br/>deadline phrase]
+    extracted --> dates["dates.py resolves<br/>tonight / by Monday<br/>deterministically"]
+    dates --> confirm[You confirm / edit]
+    confirm --> sqlite[(SQLite)]
+    sqlite --> forgetting["What am I forgetting?"]
+
+    classDef input fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0c4a6e
+    classDef process fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#4c1d95
+    classDef human fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f
+    classDef storage fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
+    classDef output fill:#fce7f3,stroke:#db2777,stroke-width:2px,color:#831843
+
+    class message input
+    class llm,extracted,dates process
+    class confirm human
+    class sqlite storage
+    class forgetting output
 ```
 
 Design choices:
