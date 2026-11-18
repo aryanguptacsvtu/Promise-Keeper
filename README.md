@@ -6,9 +6,13 @@ A local-first assistant that remembers what you promised people. Paste a message
 ("I'll send you the report tonight" or "Kal subah main tumhe call karunga"), confirm what it found,
 and later ask **"What am I forgetting?"**
 
-<video src="docs/demo-video.mp4" controls width="100%">
+<!-- <video src="docs/demo-video.mp4" controls width="100%">
   Your browser does not support embedded videos. [Download the demo video](docs/demo-video.mp4).
-</video>
+</video> -->
+
+
+https://github.com/user-attachments/assets/30005fc4-3514-40bb-b1af-1eabc138f68e
+
 
 <!-- Add a screenshot or GIF: 
 -->
