@@ -6,9 +6,13 @@ A local-first assistant that remembers what you promised people. Paste a message
 ("I'll send you the report tonight" or "Kal subah main tumhe call karunga"), confirm what it found,
 and later ask **"What am I forgetting?"**
 
+<video src="docs/demo-video.mp4" controls width="100%">
+  Your browser does not support embedded videos. [Download the demo video](docs/demo-video.mp4).
+</video>
+
 <!-- Add a screenshot or GIF: 
 -->
-![Promise Keeper](docs/image.png) 
+<!-- ![Promise Keeper](docs/image.png)  -->
 
 **Open-source core:** an open-weight model ([Gemma 3](https://ai.google.dev/gemma)) running locally through
 [Ollama](https://ollama.com), with storage in SQLite. No API keys, no accounts, works with Wi-Fi off.
@@ -146,19 +150,20 @@ Timings come from one machine and include model warm-up, so treat them as rough.
 ## Layout
 
 ```
-app.py                  Streamlit UI
-.env.example            settings template (copy to .env)
-promise_keeper/
-  config.py             settings + .env loader
-  llm.py                Ollama wrapper + health check
-  whatsapp.py           chat-export parser + cheap promise pre-filter
-  prompts.py            all prompt text
-  extractor.py          message -> structured promises
-  dates.py              deadline phrase -> datetime
-  db.py                 SQLite storage
-  report.py             "What am I forgetting?", stats, nudges
-scripts/evaluate.py     model comparison
-tests/                  pytest suite + labelled cases
+├── app.py                  Streamlit UI
+├── .env.example            settings template (copy to .env)
+├── promise_keeper/
+│   ├── config.py           settings + .env loader
+│   ├── dates.py            deadline phrase -> datetime
+│   ├── db.py               SQLite storage
+│   ├── extractor.py        message -> structured promises
+│   ├── llm.py              Ollama wrapper + health check
+│   ├── prompts.py          all prompt text
+│   ├── whatsapp.py         chat-export parser + cheap promise pre-filter
+│   └── report.py           "What am I forgetting?", stats, nudges
+├── scripts/
+│   └── evaluate.py         model comparison
+└── tests/                  pytest suite + labelled cases
 ```
 
 ## Ideas for next steps
